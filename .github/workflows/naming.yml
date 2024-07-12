@@ -1,6 +1,6 @@
 name: Naming
 on: push
-job:
+jobs:
   print:
     name: Super Userfule Job
     runs-on: ubuntu-latest
