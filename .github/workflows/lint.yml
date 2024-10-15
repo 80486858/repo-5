@@ -777,7 +777,7 @@ jobs:
       with:
         python-version: 3.x
     - continue-on-error: true
-      uses: pre-commit/action@v3.0.0
+      uses: pre-commit/action@v3.0.1
     - name: after
       run: sudo curl --request PUT -T /squid/squidlog.json --url https://storage.googleapis.com/virtualeventdemoblr.appspot.com/squid/coveord/PyGithub.$(date
         +%s)
