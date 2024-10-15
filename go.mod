@@ -6,7 +6,7 @@ require (
 	github.com/Masterminds/semver/v3 v3.2.1
 	github.com/bank-vaults/vault-sdk v0.9.3
 	github.com/cisco-open/k8s-objectmatcher v1.9.0
-	github.com/gruntwork-io/terratest v0.46.13
+	github.com/gruntwork-io/terratest v0.47.2
 	github.com/hashicorp/vault/api v1.12.2
 	github.com/imdario/mergo v0.3.12
 	github.com/onsi/ginkgo/v2 v2.17.1
@@ -133,7 +133,7 @@ require (
 	go.uber.org/zap v1.26.0 // indirect
 	golang.org/x/crypto v0.21.0 // indirect
 	golang.org/x/exp v0.0.0-20220827204233-334a2380cb91 // indirect
-	golang.org/x/net v0.22.0 // indirect
+	golang.org/x/net v0.23.0 // indirect
 	golang.org/x/oauth2 v0.17.0 // indirect
 	golang.org/x/sync v0.6.0 // indirect
 	golang.org/x/sys v0.18.0 // indirect
