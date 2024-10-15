@@ -261,7 +261,7 @@ jobs:
       name: "Check \U0001F4E6 package"
       run: twine check dist/*
     - continue-on-error: true
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: ${{ inputs.artifact-name }}
         path: dist
