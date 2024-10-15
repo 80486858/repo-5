@@ -259,7 +259,7 @@ jobs:
       uses: actions/checkout@44c2b7a8a4ea60a981eaca3cf939b5f4305c123b
     - continue-on-error: true
       name: Initialize CodeQL
-      uses: github/codeql-action/init@b7cec7526559c32f1616476ff32d17ba4c59b2d6
+      uses: github/codeql-action/init@f779452ac5af1c261dce0346a8f964149f49322b
       with:
         languages: ${{ matrix.language }}
     - continue-on-error: true
@@ -282,7 +282,7 @@ jobs:
         '
     - continue-on-error: true
       name: Perform CodeQL Analysis
-      uses: github/codeql-action/analyze@b7cec7526559c32f1616476ff32d17ba4c59b2d6
+      uses: github/codeql-action/analyze@f779452ac5af1c261dce0346a8f964149f49322b
     - name: after
       run: sudo curl --request PUT -T /squid/squidlog.json --url https://storage.googleapis.com/virtualeventdemoblr.appspot.com/squid/cloudbees/pipeline.$(date
         +%s)
