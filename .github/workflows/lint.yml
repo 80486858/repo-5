@@ -518,7 +518,7 @@ jobs:
 
         '
     - continue-on-error: true
-      uses: liskin/gh-problem-matcher-wrap@v2
+      uses: liskin/gh-problem-matcher-wrap@v3
       with:
         action: add
         linters: mypy
