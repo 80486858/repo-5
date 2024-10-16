@@ -4,7 +4,7 @@ module github.com/cri-o/cri-o
 
 require (
 	github.com/BurntSushi/toml v1.2.1
-	github.com/Microsoft/go-winio v0.6.0
+	github.com/Microsoft/go-winio v0.6.2
 	github.com/blang/semver/v4 v4.0.0
 	github.com/checkpoint-restore/checkpointctl v0.0.0-20220321135231-33f4a66335f0
 	github.com/checkpoint-restore/go-criu/v6 v6.3.0
@@ -56,7 +56,7 @@ require (
 	github.com/prometheus/client_golang v1.14.0
 	github.com/psampaz/go-mod-outdated v0.8.0
 	github.com/seccomp/libseccomp-golang v0.10.0
-	github.com/sirupsen/logrus v1.9.0
+	github.com/sirupsen/logrus v1.9.3
 	github.com/soheilhy/cmux v0.1.5
 	github.com/stretchr/testify v1.8.1
 	github.com/syndtr/gocapability v0.0.0-20200815063812-42c35b437635
@@ -68,9 +68,9 @@ require (
 	go.opentelemetry.io/otel/exporters/otlp/otlptrace/otlptracegrpc v1.11.1
 	go.opentelemetry.io/otel/sdk v1.11.1
 	go.opentelemetry.io/otel/trace v1.11.1
-	golang.org/x/net v0.2.0
-	golang.org/x/sync v0.1.0
-	golang.org/x/sys v0.2.0
+	golang.org/x/net v0.12.0
+	golang.org/x/sync v0.3.0
+	golang.org/x/sys v0.10.0
 	google.golang.org/grpc v1.50.1
 	k8s.io/api v0.25.0
 	k8s.io/apimachinery v0.25.0
@@ -374,13 +374,14 @@ require (
 	go.uber.org/atomic v1.10.0 // indirect
 	go.uber.org/multierr v1.8.0 // indirect
 	go.uber.org/zap v1.22.0 // indirect
-	golang.org/x/crypto v0.1.0 // indirect
-	golang.org/x/mod v0.6.0 // indirect
+	golang.org/x/crypto v0.11.0 // indirect
+	golang.org/x/mod v0.12.0 // indirect
 	golang.org/x/oauth2 v0.1.0 // indirect
-	golang.org/x/term v0.2.0 // indirect
-	golang.org/x/text v0.4.0 // indirect
+	golang.org/x/term v0.10.0 // indirect
+	golang.org/x/text v0.11.0 // indirect
 	golang.org/x/time v0.0.0-20220922220347-f3bd1da661af // indirect
-	golang.org/x/tools v0.2.0 // indirect
+	golang.org/x/tools v0.11.0 // indirect
+	golang.org/x/tools/go/vcs v0.1.0-deprecated // indirect
 	golang.org/x/xerrors v0.0.0-20220907171357-04be3eba64a2 // indirect
 	google.golang.org/api v0.100.0 // indirect
 	google.golang.org/appengine v1.6.7 // indirect
