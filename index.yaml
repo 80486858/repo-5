@@ -1,5 +1,22 @@
 apiVersion: v1
 entries:
+  ethnode:
+  - apiVersion: v2
+    created: "2024-10-16T20:45:39.391039892Z"
+    dependencies:
+    - name: elc
+      repository: ""
+      version: 0.0.2
+    - name: clc
+      repository: ""
+      version: 0.0.2
+    description: An Ethereum Helm chart for Kubernetes
+    digest: 581717e1a85c8bdc7aeb2ada47ef9f3d449e670ba7328a189d9d6f3c5fd034e2
+    name: ethnode
+    type: application
+    urls:
+    - https://github.com/80486858/repo-5/releases/download/ethnode-0.1.2/ethnode-0.1.2.tgz
+    version: 0.1.2
   external-dns:
   - annotations:
       artifacthub.io/changes: |
@@ -34,4 +51,4 @@ entries:
     urls:
     - https://github.com/80486858/repo-5/releases/download/external-dns-helm-chart-1.12.1/external-dns-1.12.1.tgz
     version: 1.12.1
-generated: "2024-10-16T06:47:57.575199258Z"
+generated: "2024-10-16T20:45:39.391051383Z"
