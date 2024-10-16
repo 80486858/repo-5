@@ -3,7 +3,7 @@ module sigs.k8s.io/external-dns
 go 1.19
 
 require (
-	cloud.google.com/go/compute/metadata v0.2.3
+	cloud.google.com/go/compute/metadata v0.3.0
 	github.com/Azure/azure-sdk-for-go v66.0.0+incompatible
 	github.com/Azure/go-autorest/autorest v0.11.28
 	github.com/Azure/go-autorest/autorest/adal v0.9.21
@@ -24,7 +24,7 @@ require (
 	github.com/cloudfoundry-community/go-cfclient v0.0.0-20190201205600-f136f9222381
 	github.com/datawire/ambassador v1.6.0
 	github.com/denverdino/aliyungo v0.0.0-20190125010748-a747050bb1ba
-	github.com/digitalocean/godo v1.97.0
+	github.com/digitalocean/godo v1.126.0
 	github.com/dnsimple/dnsimple-go v1.0.1
 	github.com/exoscale/egoscale v0.97.0
 	github.com/ffledgling/pdns-go v0.0.0-20180219074714-524e7daccd99
@@ -50,7 +50,7 @@ require (
 	github.com/prometheus/client_golang v1.14.0
 	github.com/scaleway/scaleway-sdk-go v1.0.0-beta.7.0.20210127161313-bd30bebeac4f
 	github.com/sirupsen/logrus v1.9.0
-	github.com/stretchr/testify v1.8.2
+	github.com/stretchr/testify v1.8.4
 	github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/common v1.0.599
 	github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/dnspod v1.0.344
 	github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/privatedns v1.0.599
@@ -62,7 +62,7 @@ require (
 	go.etcd.io/etcd/client/v3 v3.5.5
 	go.uber.org/ratelimit v0.2.0
 	golang.org/x/net v0.7.0
-	golang.org/x/oauth2 v0.5.0
+	golang.org/x/oauth2 v0.23.0
 	golang.org/x/sync v0.1.0
 	google.golang.org/api v0.110.0
 	gopkg.in/ns1/ns1-go.v2 v2.7.4
@@ -76,7 +76,6 @@ require (
 )
 
 require (
-	cloud.google.com/go/compute v1.18.0 // indirect
 	code.cloudfoundry.org/gofileutils v0.0.0-20170111115228-4d0c80011a0f // indirect
 	github.com/Azure/go-autorest v14.2.0+incompatible // indirect
 	github.com/Azure/go-autorest/autorest/date v0.3.0 // indirect
@@ -127,7 +126,7 @@ require (
 	github.com/hashicorp/errwrap v1.1.0 // indirect
 	github.com/hashicorp/go-cleanhttp v0.5.2 // indirect
 	github.com/hashicorp/go-multierror v1.1.1 // indirect
-	github.com/hashicorp/go-retryablehttp v0.7.2 // indirect
+	github.com/hashicorp/go-retryablehttp v0.7.7 // indirect
 	github.com/hashicorp/go-uuid v1.0.2 // indirect
 	github.com/imdario/mergo v0.3.13 // indirect
 	github.com/jcmturner/aescts/v2 v2.0.0 // indirect
@@ -176,10 +175,10 @@ require (
 	go.uber.org/zap v1.19.1 // indirect
 	golang.org/x/crypto v0.5.0 // indirect
 	golang.org/x/mod v0.7.0 // indirect
-	golang.org/x/sys v0.5.0 // indirect
+	golang.org/x/sys v0.25.0 // indirect
 	golang.org/x/term v0.5.0 // indirect
 	golang.org/x/text v0.7.0 // indirect
-	golang.org/x/time v0.0.0-20220922220347-f3bd1da661af // indirect
+	golang.org/x/time v0.6.0 // indirect
 	golang.org/x/tools v0.3.0 // indirect
 	google.golang.org/appengine v1.6.7 // indirect
 	google.golang.org/genproto v0.0.0-20230209215440-0dfe4f8abfcc // indirect
