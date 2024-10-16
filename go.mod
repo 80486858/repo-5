@@ -35,7 +35,7 @@ require (
 	github.com/docker/go-units v0.5.0
 	github.com/emicklei/go-restful v2.16.0+incompatible
 	github.com/fsnotify/fsnotify v1.6.0
-	github.com/go-logr/logr v1.2.3
+	github.com/go-logr/logr v1.4.1
 	github.com/go-zoo/bone v1.3.0
 	github.com/godbus/dbus/v5 v5.1.1-0.20221029134443-4b691ce883d5
 	github.com/gogo/protobuf v1.3.2
@@ -76,7 +76,7 @@ require (
 	k8s.io/apimachinery v0.25.0
 	k8s.io/client-go v1.5.2
 	k8s.io/cri-api v0.25.0
-	k8s.io/klog/v2 v2.80.1
+	k8s.io/klog/v2 v2.130.1
 	k8s.io/kubernetes v1.24.1
 	k8s.io/release v0.14.0
 	k8s.io/utils v0.0.0-20221012122500-cfd413dd9e85
