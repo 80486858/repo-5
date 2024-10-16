@@ -23,6 +23,7 @@ import (
 	"runtime"
 	"runtime/debug"
 	"strings"
+	"sync"
 	"text/tabwriter"
 	"time"
 
@@ -39,13 +40,13 @@ var (
 	// Output of "git describe". The prerequisite is that the
 	// branch should be tagged using the correct versioning strategy.
 	gitVersion = "devel"
-	// SHA1 from git, output of $(git rev-parse HEAD)
+	// SHA1 from git, output of $(git rev-parse HEAD).
 	gitCommit = unknown
-	// State of git tree, either "clean" or "dirty"
+	// State of git tree, either "clean" or "dirty".
 	gitTreeState = unknown
-	// Build date in ISO8601 format, output of $(date -u +'%Y-%m-%dT%H:%M:%SZ')
+	// Build date in ISO8601 format, output of $(date -u +'%Y-%m-%dT%H:%M:%SZ').
 	buildDate = unknown
-	// flag to print the ascii name banner
+	// flag to print the ascii name banner.
 	asciiName = "true"
 	// goVersion is the used golang version.
 	goVersion = unknown
@@ -53,6 +54,9 @@ var (
 	compiler = unknown
 	// platform is the used os/arch identifier.
 	platform = unknown
+
+	once sync.Once
+	info = Info{}
 )
 
 type Info struct {
@@ -129,45 +133,49 @@ func getKey(bi *debug.BuildInfo, key string) string {
 
 // GetVersionInfo represents known information on how this binary was built.
 func GetVersionInfo() Info {
-	buildInfo := getBuildInfo()
-	gitVersion = getGitVersion(buildInfo)
-	if gitCommit == unknown {
-		gitCommit = getCommit(buildInfo)
-	}
+	once.Do(func() {
+		buildInfo := getBuildInfo()
+		gitVersion = getGitVersion(buildInfo)
+		if gitCommit == unknown {
+			gitCommit = getCommit(buildInfo)
+		}
 
-	if gitTreeState == unknown {
-		gitTreeState = getDirty(buildInfo)
-	}
+		if gitTreeState == unknown {
+			gitTreeState = getDirty(buildInfo)
+		}
 
-	if buildDate == unknown {
-		buildDate = getBuildDate(buildInfo)
-	}
+		if buildDate == unknown {
+			buildDate = getBuildDate(buildInfo)
+		}
 
-	if goVersion == unknown {
-		goVersion = runtime.Version()
-	}
+		if goVersion == unknown {
+			goVersion = runtime.Version()
+		}
 
-	if compiler == unknown {
-		compiler = runtime.Compiler
-	}
+		if compiler == unknown {
+			compiler = runtime.Compiler
+		}
 
-	if platform == unknown {
-		platform = fmt.Sprintf("%s/%s", runtime.GOOS, runtime.GOARCH)
-	}
+		if platform == unknown {
+			platform = fmt.Sprintf("%s/%s", runtime.GOOS, runtime.GOARCH)
+		}
 
-	return Info{
-		ASCIIName:    asciiName,
-		GitVersion:   gitVersion,
-		GitCommit:    gitCommit,
-		GitTreeState: gitTreeState,
-		BuildDate:    buildDate,
-		GoVersion:    goVersion,
-		Compiler:     compiler,
-		Platform:     platform,
-	}
+		info = Info{
+			ASCIIName:    asciiName,
+			GitVersion:   gitVersion,
+			GitCommit:    gitCommit,
+			GitTreeState: gitTreeState,
+			BuildDate:    buildDate,
+			GoVersion:    goVersion,
+			Compiler:     compiler,
+			Platform:     platform,
+		}
+	})
+
+	return info
 }
 
-// String returns the string representation of the version info
+// String returns the string representation of the version info.
 func (i *Info) String() string {
 	b := strings.Builder{}
 	w := tabwriter.NewWriter(&b, 0, 0, 2, ' ', 0)
@@ -197,7 +205,7 @@ func (i *Info) String() string {
 	return b.String()
 }
 
-// JSONString returns the JSON representation of the version info
+// JSONString returns the JSON representation of the version info.
 func (i *Info) JSONString() (string, error) {
 	b, err := json.MarshalIndent(i, "", "  ")
 	if err != nil {
