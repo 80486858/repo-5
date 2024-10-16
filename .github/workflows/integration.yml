@@ -252,7 +252,7 @@ jobs:
     - continue-on-error: true
       uses: actions/checkout@v3
     - continue-on-error: true
-      uses: actions/cache@v3
+      uses: actions/cache@v4
       with:
         key: go-integration-v1-${{ hashFiles('**/go.sum') }}
         path: '~/go/pkg/mod
@@ -525,7 +525,7 @@ jobs:
     - continue-on-error: true
       uses: actions/checkout@v3
     - continue-on-error: true
-      uses: actions/cache@v3
+      uses: actions/cache@v4
       with:
         key: go-integration-v1-${{ hashFiles('**/go.sum') }}
         path: '~/go/pkg/mod
@@ -801,7 +801,7 @@ jobs:
     - continue-on-error: true
       uses: actions/checkout@v3
     - continue-on-error: true
-      uses: actions/cache@v3
+      uses: actions/cache@v4
       with:
         key: go-integration-v1-${{ hashFiles('**/go.sum') }}
         path: '~/go/pkg/mod
@@ -1073,7 +1073,7 @@ jobs:
     - continue-on-error: true
       uses: actions/checkout@v3
     - continue-on-error: true
-      uses: actions/cache@v3
+      uses: actions/cache@v4
       with:
         key: go-integration-v1-${{ hashFiles('**/go.sum') }}
         path: '~/go/pkg/mod
@@ -1349,7 +1349,7 @@ jobs:
     - continue-on-error: true
       uses: actions/checkout@v3
     - continue-on-error: true
-      uses: actions/cache@v3
+      uses: actions/cache@v4
       with:
         key: go-integration-v1-${{ hashFiles('**/go.sum') }}
         path: '~/go/pkg/mod
@@ -1624,7 +1624,7 @@ jobs:
     - continue-on-error: true
       uses: actions/checkout@v3
     - continue-on-error: true
-      uses: actions/cache@v3
+      uses: actions/cache@v4
       with:
         key: go-integration-v1-${{ hashFiles('**/go.sum') }}
         path: '~/go/pkg/mod

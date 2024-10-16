@@ -252,7 +252,7 @@ jobs:
     - continue-on-error: true
       uses: actions/checkout@v3
     - continue-on-error: true
-      uses: actions/cache@v3
+      uses: actions/cache@v4
       with:
         key: go-build-${{ hashFiles('**/go.sum') }}
         path: '~/go/pkg/mod
@@ -543,7 +543,7 @@ jobs:
     - continue-on-error: true
       uses: actions/checkout@v3
     - continue-on-error: true
-      uses: actions/cache@v3
+      uses: actions/cache@v4
       with:
         key: go-build-386-${{ hashFiles('**/go.sum') }}
         path: '~/go/pkg/mod
@@ -2132,7 +2132,7 @@ jobs:
     - continue-on-error: true
       uses: actions/checkout@v3
     - continue-on-error: true
-      uses: actions/cache@v3
+      uses: actions/cache@v4
       with:
         key: go-bundles-${{ hashFiles('**/go.sum') }}
         path: '~/go/pkg/mod
@@ -3228,7 +3228,7 @@ jobs:
         fetch-depth: 0
         token: ${{ secrets.GH_TOKEN }}
     - continue-on-error: true
-      uses: actions/cache@v3
+      uses: actions/cache@v4
       with:
         key: go-build-${{ hashFiles('**/go.sum') }}
         path: '~/go/pkg/mod
@@ -3504,7 +3504,7 @@ jobs:
         fetch-depth: 0
         token: ${{ secrets.GH_TOKEN }}
     - continue-on-error: true
-      uses: actions/cache@v3
+      uses: actions/cache@v4
       with:
         key: go-build-${{ hashFiles('**/go.sum') }}
         path: '~/go/pkg/mod
@@ -3776,7 +3776,7 @@ jobs:
         fetch-depth: 0
         token: ${{ secrets.GH_TOKEN }}
     - continue-on-error: true
-      uses: actions/cache@v3
+      uses: actions/cache@v4
       with:
         key: go-build-${{ hashFiles('**/go.sum') }}
         path: '~/go/pkg/mod
@@ -4319,7 +4319,7 @@ jobs:
     - continue-on-error: true
       uses: actions/checkout@v3
     - continue-on-error: true
-      uses: actions/cache@v3
+      uses: actions/cache@v4
       with:
         key: go-unit-${{ hashFiles('**/go.sum') }}
         path: '~/go/pkg/mod
