@@ -34,7 +34,7 @@ require (
 	github.com/docker/distribution v2.8.1+incompatible
 	github.com/docker/go-units v0.5.0
 	github.com/emicklei/go-restful v2.16.0+incompatible
-	github.com/fsnotify/fsnotify v1.6.0
+	github.com/fsnotify/fsnotify v1.7.0
 	github.com/go-logr/logr v1.2.3
 	github.com/go-zoo/bone v1.3.0
 	github.com/godbus/dbus/v5 v5.1.1-0.20221029134443-4b691ce883d5
@@ -70,7 +70,7 @@ require (
 	go.opentelemetry.io/otel/trace v1.11.1
 	golang.org/x/net v0.2.0
 	golang.org/x/sync v0.1.0
-	golang.org/x/sys v0.2.0
+	golang.org/x/sys v0.4.0
 	google.golang.org/grpc v1.50.1
 	k8s.io/api v0.25.0
 	k8s.io/apimachinery v0.25.0
