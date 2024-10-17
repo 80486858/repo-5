@@ -254,7 +254,7 @@ jobs:
     - continue-on-error: true
       uses: fluxcd/flux2/action@main
     - continue-on-error: true
-      uses: sigstore/cosign-installer@v2.8.1
+      uses: sigstore/cosign-installer@v3.7.0
     - continue-on-error: true
       id: prep
       name: Prepare
