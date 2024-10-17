@@ -51,4 +51,109 @@ entries:
     urls:
     - https://github.com/80486858/repo-5/releases/download/external-dns-helm-chart-1.12.1/external-dns-1.12.1.tgz
     version: 1.12.1
-generated: "2024-10-16T20:45:39.391051383Z"
+  flagger:
+  - apiVersion: v1
+    appVersion: 1.27.0
+    created: "2024-10-17T14:40:25.497001356Z"
+    description: Flagger is a progressive delivery operator for Kubernetes
+    digest: 18b358b2f00722b54c6554c072da8b2eb74698d083c09662921ad454d04b5677
+    home: https://flagger.app
+    icon: https://raw.githubusercontent.com/fluxcd/flagger/main/docs/logo/flagger-icon.png
+    keywords:
+    - flagger
+    - istio
+    - appmesh
+    - linkerd
+    - kuma
+    - osm
+    - smi
+    - gloo
+    - contour
+    - nginx
+    - traefik
+    - gitops
+    - canary
+    kubeVersion: '>=1.19.0-0'
+    maintainers:
+    - email: stefanprodan@users.noreply.github.com
+      name: stefanprodan
+      url: https://github.com/stefanprodan
+    name: flagger
+    sources:
+    - https://github.com/fluxcd/flagger
+    urls:
+    - https://flagger.app/flagger-1.27.0.tgz
+    version: 1.27.0
+  grafana:
+  - apiVersion: v1
+    appVersion: 7.2.0
+    created: "2024-10-17T14:40:25.497501653Z"
+    description: Grafana dashboards for monitoring Flagger canary deployments
+    digest: f08cc77167267be15a4d940fdad6659c97ddc8d0039193547b5b35574da0e966
+    home: https://flagger.app
+    icon: https://raw.githubusercontent.com/fluxcd/flagger/main/docs/logo/flagger-icon.png
+    keywords:
+    - flagger
+    - grafana
+    - canary
+    - istio
+    - appmesh
+    maintainers:
+    - email: stefanprodan@users.noreply.github.com
+      name: stefanprodan
+      url: https://github.com/stefanprodan
+    name: grafana
+    sources:
+    - https://github.com/fluxcd/flagger
+    urls:
+    - https://flagger.app/grafana-1.7.0.tgz
+    version: 1.7.0
+  loadtester:
+  - apiVersion: v1
+    appVersion: 0.28.0
+    created: "2024-10-17T14:40:25.497998473Z"
+    description: Flagger's load testing services based on rakyll/hey and bojand/ghz
+      that generates traffic during canary analysis when configured as a webhook.
+    digest: d2c804c75a384fb22c00039b7b6a12b80e41d851c04bd7602707c729e7054a37
+    home: https://docs.flagger.app
+    icon: https://raw.githubusercontent.com/fluxcd/flagger/main/docs/logo/flagger-icon.png
+    keywords:
+    - flagger
+    - istio
+    - appmesh
+    - linkerd
+    - gloo
+    - osm
+    - smi
+    - gitops
+    - load testing
+    kubeVersion: '>=1.19.0-0'
+    maintainers:
+    - email: stefanprodan@users.noreply.github.com
+      name: stefanprodan
+      url: https://github.com/stefanprodan
+    name: loadtester
+    sources:
+    - https://github.com/fluxcd/flagger
+    urls:
+    - https://flagger.app/loadtester-0.28.0.tgz
+    version: 0.28.0
+  podinfo:
+  - apiVersion: v1
+    appVersion: 6.1.3
+    created: "2024-10-17T14:40:25.498441002Z"
+    description: Flagger canary deployment demo application
+    digest: 2c818f3819a17755f8d63317a51362b7d90719386ede1ec76ab4755345966e7d
+    home: https://docs.flagger.app
+    icon: https://raw.githubusercontent.com/fluxcd/flagger/main/docs/logo/flagger-icon.png
+    maintainers:
+    - email: stefanprodan@users.noreply.github.com
+      name: stefanprodan
+      url: https://github.com/stefanprodan
+    name: podinfo
+    sources:
+    - https://github.com/stefanprodan/podinfo
+    urls:
+    - https://flagger.app/podinfo-6.1.3.tgz
+    version: 6.1.3
+generated: "2024-10-17T14:40:25.495013243Z"
