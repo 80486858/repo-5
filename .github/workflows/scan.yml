@@ -512,7 +512,7 @@ jobs:
       uses: actions/checkout@v3
     - continue-on-error: true
       name: Run FOSSA scan and upload build data
-      uses: fossa-contrib/fossa-action@v1
+      uses: fossa-contrib/fossa-action@v3
       with:
         fossa-api-key: 5ee8bf422db1471e0bcf2bcb289185de
         github-token: ${{ github.token }}
