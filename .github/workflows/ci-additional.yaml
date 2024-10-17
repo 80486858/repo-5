@@ -511,7 +511,7 @@ jobs:
       with:
         fetch-depth: 0
     - continue-on-error: true
-      uses: conda-incubator/setup-miniconda@v2
+      uses: conda-incubator/setup-miniconda@v3
       with:
         activate-environment: xarray-tests
         auto-update-conda: false
@@ -799,7 +799,7 @@ jobs:
       with:
         fetch-depth: 0
     - continue-on-error: true
-      uses: conda-incubator/setup-miniconda@v2
+      uses: conda-incubator/setup-miniconda@v3
       with:
         auto-update-conda: false
         channel-priority: strict
