@@ -364,7 +364,7 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       name: Create release and SBOM
-      uses: goreleaser/goreleaser-action@v4
+      uses: goreleaser/goreleaser-action@v6
       with:
         args: release --release-notes=notes.md --rm-dist --skip-validate
         version: latest
